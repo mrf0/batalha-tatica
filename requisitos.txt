@@ -18,3 +18,14 @@ estão sob controle do usuário.
 6. Cada criatura deve ter pontos de movimento e habilidade para 
 limitar suas ações.
 
+Requisitos não-funcionais:
+
+
+1. O mapa deve ser uma matriz NxM, sendo que nem todas as células
+precisam fazer parte do mapa, mas de qualquer célula que faz parte
+deve ser possível caminhar para qualquer outra que também faça.
+
+   Cada célula pode estar ocupada ou não. Se uma criatura estiver
+em uma célula x, então a célula x deve estar ocupada. Uma criatura
+não pode se mover para uma célula ocupada.
+
