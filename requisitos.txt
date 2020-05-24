@@ -29,3 +29,14 @@ deve ser possível caminhar para qualquer outra que também faça.
 em uma célula x, então a célula x deve estar ocupada. Uma criatura
 não pode se mover para uma célula ocupada.
 
+2. O movimento deve ocorrer da seguinte foram:
+
+   Em seu turno, o usuário pressiona uma tecla que ativa o modo de
+movimento. No modo de movimento o usuário pode pressionar direcionais
+ou confirmar o movimento.
+
+   Pressionando direcionais o usuário irá construir o caminho que
+sua criatura irá percorrer quando o movimento for confirmado. A cada
+vez que o caminho que será percorrido crescer, a tela deve ser
+atualizada exibindo esse novo caminho.
+
