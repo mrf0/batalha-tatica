@@ -1,0 +1,20 @@
+Requisitos funcionais:
+
+
+1. A tela deve mostrar um mapa com aliados e inimigos.
+
+2. O decorrer da batalha deve ser divido em turnos. 1 turno para cada 
+criatura participando do combate.
+
+3. O usuário deve ter controle sobre pelo menos uma das criaturas da 
+batalha.
+
+4. No turno da criatura do usuário deve ser possível que o usuário 
+movimente sua criatura, use habilidades e passe o turno.
+
+5. O sistema deve se encarregar de controlar as criaturas que não
+estão sob controle do usuário.
+
+6. Cada criatura deve ter pontos de movimento e habilidade para 
+limitar suas ações.
+
