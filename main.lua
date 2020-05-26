@@ -12,3 +12,9 @@ function love.draw()
 	mapa:desenha(love.graphics.getDimensions())
 
 end
+
+function love.resize(largura, altura)
+
+	mapa:desenha(love.graphics.getDimensions())
+
+end
