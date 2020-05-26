@@ -1,20 +1,20 @@
-require "map"
+require "batalha"
 
 function love.load()
 
-	mapa = Mapa:novo()
-	mapa:iniciarQuad(21)
+	batalha = Batalha:novo(love.graphics.getDimensions())
 
 end
 
 function love.draw()
 
-	mapa:desenha(love.graphics.getDimensions())
+	batalha:desenha()
 
 end
 
+
 function love.resize(largura, altura)
 
-	mapa:desenha(love.graphics.getDimensions())
+	batalha:recalculaDeslocamento(largura, altura)
 
 end
