@@ -2,19 +2,34 @@ require "batalha"
 
 function love.load()
 
-	batalha = Batalha:novo(love.graphics.getDimensions())
+   batalha = Batalha:novo(love.graphics.getDimensions())
 
 end
 
 function love.draw()
 
-	batalha:desenha()
+   desenharBatalha(batalha:desenha())
 
 end
 
+function desenharBatalha(margem, lado, dim, separacao)
 
-function love.resize(largura, altura)
+   for i=1, dim.x do
 
-	batalha:recalculaDeslocamento(largura, altura)
+      for j=1, dim.y do
+
+         local pos_x = lado*(i-1) + margem.horizontal
+	 local pos_y = lado*(j-1) + margem.vertical
+	 
+         love.graphics.rectangle("line", pos_x, pos_y, lado, lado)
+	 -- Desenha quadrado com LADO, em LADO * (i-1) + margem
+
+      end
+
+   end
+
+   love.graphics.rectangle("line", separacao, 0,
+			   batalha.tela.x - separacao,
+			   batalha.tela.y)
 
 end
