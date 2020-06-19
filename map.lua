@@ -51,3 +51,10 @@ function Mapa:getDim()
     return self.quantidade_celulas
 
 end
+
+-- Posiciona uma criatura no mapa
+function Mapa:mudaCelula (x, y, valor)
+
+   self.dados[x][y] = valor
+
+end

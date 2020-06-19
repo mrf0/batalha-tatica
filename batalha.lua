@@ -3,6 +3,7 @@
 --
 -- Irá gerenciar todos os processos da batalha.
 
+require "criaturas"
 require "map"
 
 Batalha = {tela = {x = nil, y = nil}}
@@ -19,6 +20,9 @@ function Batalha:novo(largura, altura)
 	o.mapa = Mapa:novo()
 	o.mapa:iniciarRet(15, 3)
 
+	o.aliado = criatura:novo(1)
+	o.inimigo = criatura:novo(2)
+	
 	return o
 
 end
@@ -55,3 +59,4 @@ function Batalha:desenha()
    return margem, lado, dim, separacao
 
 end
+
